@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 define('PORTFOLIO_ENTRY', true);
@@ -25,14 +26,16 @@ header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-sr
 <!doctype html>
 <html lang="pt-BR" data-theme="dark" data-resolved-theme="dark" data-portfolio-model="5">
 <?php require __DIR__ . '/includes/head.php'; ?>
+
 <body id="topo">
-<a href="#conteudo" class="skip">Ir para o conteúdo</a>
-<?php require __DIR__ . '/includes/header.php'; ?>
-<main id="conteudo">
-<?php foreach (['hero','about','expertise','services','projects','preview','experience-lab','process','project-studio','contact'] as $section) {
-    require __DIR__ . '/sections/' . $section . '.php';
-} ?>
-</main>
-<?php require __DIR__ . '/includes/footer.php'; ?>
+    <a href="#conteudo" class="skip">Ir para o conteúdo</a>
+    <?php require __DIR__ . '/includes/header.php'; ?>
+    <main id="conteudo">
+        <?php foreach (['hero', 'about', 'expertise', 'services', 'projects', 'preview', 'experience-lab', 'process', 'project-studio', 'contact'] as $section) {
+            require __DIR__ . '/sections/' . $section . '.php';
+        } ?>
+    </main>
+    <?php require __DIR__ . '/includes/footer.php'; ?>
 </body>
+
 </html>
