@@ -6,7 +6,7 @@ if (!defined('PORTFOLIO_ENTRY')) {
 }
 
 return [
-    'name' => 'Next Interface',
+    'name' => 'Duarte Online',
     'full_name' => 'Eduardo Augusto (Duarte)',
     'role' => 'Estudante de desenvolvimento de interfaces',
     'headline' => 'Interfaces que fazem sentido.',
